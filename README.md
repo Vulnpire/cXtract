@@ -6,7 +6,6 @@ is designed to search cloud data for subdomains and IP addresses, with features 
 ## Features
 - Search cloud data for domains and subdomains.
 - Extract IP addresses or subdomains with the `-only-ips` and `-subs` flags.
-- Update cloud data from predefined sources.
 - Supports concurrency for faster searches.
 - Simple input handling through stdin (via `echo` or `cat`).
 - Verbose logging with the `-v` flag for detailed output.
@@ -19,6 +18,9 @@ is designed to search cloud data for subdomains and IP addresses, with features 
 ```go install -v github.com/Vulnpire/cXtract@latest```
 
 ## Usage
+
+![image](https://github.com/user-attachments/assets/10bfcdef-927d-4ef5-8a14-b612177153a6)
+
 
 ### Search for Subdomains
 To search for subdomains of a domain and display them one per line:
@@ -39,7 +41,6 @@ echo "example.com" | cXtract -c 10 -subs
 ```
 
 ## Flags
-- `-duc` : Disable updates of cloud data.
 - `-v` : Enable verbose output.
 - `-c <level>` : Set the concurrency level.
 - `-subs` : Extract and display subdomains only.
